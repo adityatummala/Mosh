@@ -25,6 +25,5 @@ print(get_name[-2])
 print(get_name[-2:])
 print(get_name[:-2])
 print(get_name.upper())
-print(get_name.replace('leClaire','Tummala'))
 
 
