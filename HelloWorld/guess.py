@@ -1,3 +1,5 @@
+#Simulation to check if you have got the lucky number
+
 i = 0
 lucky_number = 10
 is_lucky = False
