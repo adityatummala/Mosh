@@ -1,0 +1,73 @@
+Index: IN python -1 represents the last
+Formatted strings can be used without having to break the sentence quotes to fill in variables. 
+Msg = f'{first_name} [{last_name}] is a coder'
+	This will print Aditya [Tummala] is a coder
+In the above example, use f to begin and put variables under {}
+
+First_name.upper()
+This is a function specific to the strings. Such functions are called as Methods. When a function belongs to something else or specific object, then it is called method
+Len(first_name) or print(first_name) are functions as they are general purpose
+
+First_name.find('P') will find the first occurrence of capital P and returns the index. You can also pass sequence of characters 'Python'. Similarly replace method
+
+Find gives the index and in operator gives boolean value
+Print('Python' in course) returns true if the value is present in course
+
+Module in python is a separate file that contains reusable functions
+Import <module name>
+Eg: import math
+And then I can use all math functions like math.ceil(), math.floor()
+
+List.append(value)
+List.insert(index, value)
+List.remove(value)
+List.clear()
+List.pop() - last item in the list is removed
+List.index(value) - gives index of the first occurrence of the value
+Print(value in list) - prints the boolean value
+List.count(value) - gives the occurences of the value
+List.sort()
+List.reverse() - first sort and then reverse it to get the values in descending order
+List.copy() - copy the list into another list
+
+Coordinates = [1, 2, 3]
+X, y, z = coordinates - if we do this then list values are assigned to those variables, This is called unpacking
+
+Tuples is when you use () instead of []
+
+Customer["name"] if this gives an error as the key "name" doesn’t exist in the dictionary, use get method as follows
+Customer.get("name", default value)
+If name doesn’t exist, then get will display the default value
+
+When a user enters the input, it can be split into multiple values in a list
+Eg: message = input(">"
+	Words = message.split(' ')      here space is the separater to create the list
+	Print(words)       wll print output as ['Good', 'Morning', 'Sunshine']
+	
+Use key word arguments to improve readability of the code
+Use key word arguments always after positional arguments 
+
+Try:
+	Age = int(input(">"))
+	Income = 20000
+	Some_value = income/age
+Except ZeroDivisionError:
+	Print("Age cannot be zero")
+
+Classes can be used to define new types. Always start with a capital and do not use underscore
+ Objects are instances of classes
+
+Constructors - initiate self through __init__(self, x, y) where x and y are variables and whose value can be passed through the object, while creating the object
+
+Inheritance 
+Class Dog(Mammal):
+In the above example, all methods under Mammal are inherited into Dog class
+
+Modules are files containing python code. If I have a file called converters.py that contains 2 functions - convert kgs to lbs and vice versa. Now in my new file, I just have to type at the beginning
+	Ø Import converters
+Now converters is an object and I can access its methods by just typing converters.<method name>
+
+If we want to import just one function, then 
+	Ø From converters import kg_to_lbs
+Now the new function can be accessed by just giving kg_to_lbs(10)
+
